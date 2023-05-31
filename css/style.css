@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4fc
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #f4f4fc;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos de las secciones */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.seccion1 {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.seccion2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+
+/* Estilos de la sección 1 */
+.contenedorcajatexto {
+    margin-bottom: 10px;
+}
+
+.cajatexto {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f4f4fc;
+    border-color: #f4f4fc;
+}
+
+.alerta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.alerta img {
+    margin-right: 10px;
+    max-width: 20px;
+    height: auto;
+}
+
+/* Estilos de los botones */
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-encriptar,
+.btn-copiar,
+.btn-limpiar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0A3871;
+    color: #f4f4fc;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.btn-desencriptar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #67808E;
+    color: #f4f4fc;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.btn-encriptar:hover,
+.btn-copiar:hover,
+.btn-limpiar:hover {
+    background-color: #67808E;
+}
+
+.btn-desencriptar:hover {
+    background-color: #0A3871;
+}
+
+/* Estilos de la sección 2 */
+.contenedormunieco img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor-parrafo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contenedor-parrafo h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.contenedor-resultado {
+    text-align: center;
+}
+
+.texto-resultado {
+    font-size: 18px;
+}
+
+.ocultar {
+    display: none;
+}
+
+
+/* Estilos responsivos */
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .seccion1 {
+        width: 60%;
+        margin-right: 20px;
+    }
+
+    .seccion2 {
+        width: 40%;
+    }
+}
